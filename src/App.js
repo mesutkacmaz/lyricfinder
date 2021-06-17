@@ -1,8 +1,12 @@
-function App() {
+import Navbar from './components/layout/Navbar'
+import Search from './components/tracks/Search'
+
+const App = () => {
   return (
-    <div>
-      <h1>Hello</h1>
-    </div>
+    <>
+      <Navbar />
+      <Search />
+    </>
   );
 }
 
