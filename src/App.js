@@ -1,12 +1,19 @@
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Navbar from './components/layout/Navbar'
-import Search from './components/tracks/Search'
+import Index from './components/layout/Index'
 
 const App = () => {
   return (
-    <>
-      <Navbar />
-      <Search />
-    </>
+    <Router>
+      <>
+        <Navbar />
+        <div className='container'>
+          <Switch>
+            <Route path='/' component={Index} exact />
+          </Switch>
+        </div>
+      </>
+    </Router>
   );
 }
 

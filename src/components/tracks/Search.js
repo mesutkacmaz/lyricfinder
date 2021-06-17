@@ -4,7 +4,6 @@ const Search = () => {
   const [trackTitle, setTrackTitle] = useState('')
 
   return (
-    <div className='container'>
       <div className='card card-body mb-4 p-4'>
         <h1 className='display-4 text-center'>
           <i className='fas fa-music'></i> Search For A Song
@@ -17,7 +16,6 @@ const Search = () => {
           <button className='btn btn-primary btn-lg mb-5' type='submit' style={{ width: '100%' }}>Get Track Lyrics</button>
         </form>
       </div>
-    </div>
   )
 }
 
